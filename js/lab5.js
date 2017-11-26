@@ -59,6 +59,8 @@ $(document).ready(function() {
 	$(".likeBtn").click(function() {
 		console.log("like button clicked");
  	// tracker code here, refer to slide #26
+ 		tracker = ga.getAll()[0];
+ 		tracker.send('event', 'like', 'click');
 	});
 
 	// insert click handler here
