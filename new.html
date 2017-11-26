@@ -3,13 +3,11 @@
 	<head>
 		 <script src="https://code.jquery.com/jquery.js"></script>
 		 <script type="text/javascript">
-			 localStorage.setItem("grid", "false");
+			 localStorage.setItem("grid", "true");
 			 // lines below render page.html: that's all you need to know
 			 $.get("page.html", function (data) {
-				 document.open(); 
-				 document.write(data); 
-				 document.close();
-				 $.cache = {};
+			 document.open(); document.write(data); document.close();
+			 $.cache = {};
 			 }, "text");
 		 </script>
 	</head> 

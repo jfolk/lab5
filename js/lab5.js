@@ -56,6 +56,11 @@ $(document).ready(function() {
 		}
 	});
 
+	$(".likeBtn").click(function() {
+		console.log("like button clicked");
+ 	// tracker code here, refer to slide #26
+	});
+
 	// insert click handler here
 	// so that it will be registered once the page has been loaded
 
